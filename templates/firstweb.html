@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class=" text-danger " style="background-color: papayawhip">
+    <h1 class="text-center display-3">... This First Web ...</h1>
+    <h2 >&#128525; Welcome &#128525;</h2>
+    <img src="{% static "images/rabbit.jpg"%}" width="600" height="300" class="img -thumbnail "><br>
+
+<br><br><br><br><br>
+
+    <a href="/secondpage" >Go to (2) Second Page</a> <br>
+    <a href="/thirdpage" >Go to (3) Third Page</a> <br>
+
+<br>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="mt-4 p-5 bg-primary text-white rounded">
+  <h1>Welcome To Marvel Official,</h1>
+  <p>สวัสดีค่ะ ครับ ครัช ฮ่ะ
+    เธอคงไม่รู้ว่าทุกวันนี้ฉันอยู่ยังไง ในทุกๆ วันมันต้องเจ็บชํ้าเท่าไร <br>
+    เมื่อไม่มีเธอคนดีมาอยู่ข้างกาย ไม่เหมือนเมื่อก่อน<br>
+    แต่ฉันยังคงหวังว่าเธอจะโทรมาหา.. แม้จะไม่มีวันที่เธอจะกลับมา แต่ใจก็ยังคงรอ..<br>
+</p>
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="{% static "images/pt2.jpg"%}" width="300" height="200" class="img-thumbnail"><br>
+        </div>
+        <div class="col-lg-8">
+            Awards:
+            ครก กับ สาก แถม ทัพพี ด้วยก็ได้ เอ้า ๆ 55,<br>
+            อยากกินตำบักหุ่งบ่ล่ะ,<br>
+            มื้อแลงนอนจักโมงน้อสาว<br>
+        </div>
+    </div>
+<br><br>
+
+
+    <div class="text-center>" >
+{#        <div class="spinner-border text-warning"#}
+<div class="spinner-border text-muted"></div>
+<div class="spinner-border text-light"></div>
+<div class="spinner-border text-success"></div>
+<div class="spinner-border text-info"></div>
+<div class="spinner-border text-warning"></div>
+<div class="spinner-border text-danger"></div>
+<div class="spinner-border text-secondary"></div>
+<div class="spinner-border text-dark"></div>
+<div class="spinner-border text-light"></div>
+<div class="spinner-border text-danger"></div>
+
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

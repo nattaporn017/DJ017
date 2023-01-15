@@ -1,0 +1,41 @@
+{#{% load static %}#}
+{#<ul class="list-group">#}
+{#    <li class="list-group-item active">Menu</li>#}
+{#  <li class="list-group-item">Home</li>#}
+{#  <li class="list-group-item"><a href="/firstweb">First Web<</a> </li>#}
+{#  <li class="list-group-item"><a href="/secondpage">Second Page<</a> </li>#}
+{#  <li class="list-group-item"><a href="/thirdpage">Third Page<</a> </li>#}
+{#</ul>#}
+
+{% load static %}
+<br>
+<ul class="list-group">
+    <li class="list-group-item active">
+        <i class="fa fa-list"></i> Menu:
+    </li>
+    <li class="list-group-item">
+{#            <a href="{% url '' %}">#}
+            <i class="fa fa-home"></i> Home
+        </a>
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'firstweb' %}">
+        <i class="fa fa-book"></i>&nbsp;&nbsp; First Web</a>
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'secondpage' %}">
+            <i class="fa fa-book"></i>&nbsp;&nbsp; Sacond Page
+        </a>
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'thirdpage' %}">
+            <i class="fa fa-book"></i>&nbsp;&nbsp; Third Page
+        </a>
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'hny' %}">
+            <i class="fa fa-book"></i>&nbsp;&nbsp; HNY.
+        </a>
+    </li>
+</ul>
+<br><br><br><br>

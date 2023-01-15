@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <br>
+<!-- Carousel -->
+<div id="hny" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#hny" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#hny" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#hny" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/hny1.jpg' %}" alt="HNY1" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/hny2.jpg' %}" alt="HNY2" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/hny3.jpg' %}" alt="HNY3" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#hny" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#hny" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container-fluid mt-3">
+  <h3>Carousel Example</h3>
+  <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="row">
+    <div class="col-lg-3">
+    </div>
+        <div class="col-lg-6">
+
+    <div class="alert alert-success text-center">
+
+            <strong> Happy New Year 2023 </strong> ค้ำคูน เด้อออออ
+        <button type="button" class="btn-close" data-bs dimiss="alert"></button>
+    </div>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+
+    <div class="alert alert-danger">
+        <strong> ด่วนนนนนนนน! </strong> มื้อแลงเจอกัน ตวด.
+    </div>
+            </div>
+    </div>
+
+
+    <div class="progress">
+        <div class="progress-bar" style="width:70%; color:yellow; font-size: 15px">70%</div>
+    </div><br><br>
+
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Sing Up
+    </button>
+    <!-- The Modal -->
+<div class="modal" id="myModal" data-bs-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">คำสั่งซื้อมีปัญหา</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        สินค้าหมด กรุณาติดต่อ Addmin เพื่อสั่งจองล่วงหน้า
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

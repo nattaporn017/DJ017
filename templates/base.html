@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{#{% fontawesome_5_static %}#}
+
+
+
+
+<head>
+    <link type="text/css" rel="stylesheet"
+          href={% static 'stylesheet/bt523/css/bootstrap.css' %}>
+    <link type="text/css" rel="stylesheet"  href="{% static 'fontawesome5/css/all.css' %}">
+
+    <script src='{% static 'stylesheet/bt523/js/bootstrap.bundle.js' %}'></script>
+
+    <script src='{% static 'stylesheet/bt523/js/bootstrap.js' %}'></script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div class="row">
+
+            <div class="col-lg-12 " style="background-color: pink">
+                {% include 'header.html' %}
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-lg-3  text-white" style="background-color: #b6d4fe">
+            {% include 'menu.html' %}
+        </div>
+        <div class="col-lg-9 text-primary" style="background-color: #b6d4fe">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    </div>
+</body>
+</html>
